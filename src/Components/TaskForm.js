@@ -21,13 +21,14 @@ const TaskForm = ({ addTask, priorities }) => {
     <div class="card mainContent">
     <form onSubmit={handleSubmit}>
     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-        <Form.Label>Email address</Form.Label>
+        <Form.Label>Task Name</Form.Label>
         <Form.Control type="text" placeholder="Task Name" value={taskName}  onChange={(e) => setTaskName(e.target.value)} ref={taskNameInputRef} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Example textarea</Form.Label>
+        <Form.Label>Task Description</Form.Label>
         <Form.Control as="textarea" rows={3} value={description} onChange={(e) => setDescription(e.target.value)} />
       </Form.Group>
+      <Form.Label>Priority</Form.Label>
       <Form.Select value={priority} onChange={(e) => setPriority(e.target.value)}>
       {priorities.map((p) => (
             <option key={p} value={p}>

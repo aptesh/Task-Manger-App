@@ -14,7 +14,7 @@ const TaskList = ({ tasks, priorities }) => {
     const groupedTasks = groupTasksByPriority();
 
     return priorities.map((priority) => (
-      <div key={priority}>
+      <div class="card mainContent" key={priority}>
         <h3>{priority} Priority</h3>
         {groupedTasks[priority].map((task) => (
           <div key={task.id} className={`task ${task.priority.toLowerCase()}`}>

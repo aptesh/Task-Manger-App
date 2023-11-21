@@ -42,6 +42,7 @@ const TaskManager = () => {
 
   return (
     <div>
+    
       <h1>Task Manager</h1>
       <TaskForm addTask={addTask} priorities={priorities} taskNameInputRef={taskNameInputRef} />
       <TaskCategories
@@ -49,6 +50,7 @@ const TaskManager = () => {
         addCategory={addCategory}
         removeCategory={removeCategory}
       />
+      <div class="card mainContent">
       <label>
         Filter by Category:
         <select
@@ -63,7 +65,9 @@ const TaskManager = () => {
           ))}
         </select>
       </label>
+      </div>
       <TaskList tasks={filteredTasks} priorities={priorities} />
+    
     </div>
   );
 };
