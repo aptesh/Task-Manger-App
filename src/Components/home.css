@@ -1,0 +1,44 @@
+.colour{
+    background-color: black;
+}
+
+.search{
+    margin-left: 700px;
+}
+
+.mainContent{
+    margin-left: 120px;
+    
+    margin-right: 90px;
+    padding: 20px;
+}
+
+.mainContent2{
+    margin-left: 140px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 110px;
+    padding: 20px;
+}
+
+.styleCard{
+    margin: 10px;
+}
+
+.myimg{
+    height: 90px;
+    width: 150px;
+}
+
+.cardForm{
+    height: 70%;
+}
+
+.page{
+    margin-left: 500px;
+}
+
+.btm-add{
+    margin-top: 80px;
+    margin-left: 550px;
+}
